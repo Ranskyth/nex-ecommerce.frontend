@@ -1,4 +1,4 @@
-const API = process.env.NEXT_PUBLIC_API;
+import { API } from "../api/apiConfig";
 
 export const GetAllProductServices = async () => {
   const data = await fetch(`${API}/products`);
