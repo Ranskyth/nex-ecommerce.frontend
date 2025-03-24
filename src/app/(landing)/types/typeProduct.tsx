@@ -4,6 +4,6 @@ export interface typeProduct {
     descricao?: string;
     quantidade?: number;
     valor?: number;
-    img_produto?: string;
+    imagem?: string;
     isBigCard?:boolean
   }

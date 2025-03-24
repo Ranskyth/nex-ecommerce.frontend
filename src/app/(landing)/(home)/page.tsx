@@ -35,9 +35,10 @@ export default function Home() {
                   valor={x.valor}
                   descricao={x.descricao}
                   quantidade={x.quantidade}
-                  img_produto={x.img_produto}
+                  imagem={x.imagem}
                 />
               </div>
+              
             );
           })}
         </div>

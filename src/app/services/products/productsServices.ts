@@ -3,6 +3,7 @@ import { API } from "../api/apiConfig";
 export const GetAllProductServices = async () => {
   const data = await fetch(`${API}/products`);
   const datajson = await data.json();
+  console.log(datajson)
   return datajson;
 };
 

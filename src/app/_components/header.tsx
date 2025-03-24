@@ -2,6 +2,7 @@
 import { ModeToggle } from "./button-theme"
 
 import { ButtonCart } from "./button-cart"
+import Link from "next/link"
 
 
 export const Header = () => {
@@ -10,8 +11,10 @@ export const Header = () => {
             <nav>
                 <ul className="flex justify-between items-center">
                     <div>
-
-                    <img src={"./next.svg"} height={85} width={85} alt="logo"/>
+                        <Link href={"/"} className="font-bold text-[28px]">
+                        
+                         Nex Ecommerce
+                        </Link>
                     </div>
                     <div className="flex gap-3 items-center">
 

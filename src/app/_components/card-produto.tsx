@@ -5,14 +5,14 @@ import { typeProduct } from "../(landing)/types/typeProduct";
 import Link from "next/link";
 
 
-export const CardProduto = ({isBigCard,id,valor,nome,quantidade,descricao,img_produto}:typeProduct) => {
+export const CardProduto = ({id,valor,nome,quantidade,descricao,imagem}:typeProduct) => {
   return (
     <Link className="w-full h-full" href={`products/${id}`}>    
     <Card className="overflow-hidden hover:border-[#6683e2]">
       <div className="hover:scale-[1.02] duration-500">
         <div>
 
-        <img src={img_produto} className="object-cover w-full h-[250px]" />
+        <img src={imagem} className="object-cover w-full h-[250px]" />
         </div>
       <CardFooter className="mt-3">
         <div className="flex flex-col gap-1">
