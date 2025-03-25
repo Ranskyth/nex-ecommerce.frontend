@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ContextAppProvider } from "./_components/contextApp";
+import { ContextAppProvider } from "./_context/contextApp";
 
 
 

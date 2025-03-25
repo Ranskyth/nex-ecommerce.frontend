@@ -1,6 +1,6 @@
 'use client'
 import { typeProduct } from "@/app/(landing)/types/typeProduct";
-import { contextApp } from "@/app/_components/contextApp";
+import { contextApp } from "@/app/_context/contextApp";
 import { GetByIdProductServices } from "@/app/services/products/productsServices";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
@@ -36,9 +36,8 @@ const Page = () => {
 
   },[])
 
-  const handlePagamento = async () => {
-    //const pagamento = await CreatePagamento(String(id))
-    redirect("/finalizar_comprar")
+  const handleFinalizarComprar = async () => {
+    redirect(`${id}/finalizar_comprar`)
   }
 
   return (
@@ -73,7 +72,7 @@ const Page = () => {
         </CardContent>
         <CardFooter className=" gap-6">
         <Button className="font-bold" onClick={addToCart}>Adicionar No Carrinho</Button>
-          <Button className="font-bold" onClick={handlePagamento}>Comprar</Button>
+          <Button className="font-bold" onClick={handleFinalizarComprar}>Comprar</Button>
         </CardFooter>
       </Card>
     </div>

@@ -16,8 +16,8 @@ export const CardProduto = ({id,valor,nome,quantidade,descricao,imagem}:typeProd
         </div>
       <CardFooter className="mt-3">
         <div className="flex flex-col gap-1">
-          <p className="text-[12px]">
-            {descricao}
+          <p className="text-[18px]">
+            {nome}
           </p>
           <div className="flex gap-4 items-center">
             <ShoppingBag/>

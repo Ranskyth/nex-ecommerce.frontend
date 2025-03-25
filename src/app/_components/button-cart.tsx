@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/sheet";
 import { ShoppingCartIcon } from "lucide-react";
 import { useContext, useEffect, useState } from "react";
-import { contextApp } from "./contextApp";
+import { contextApp } from "../_context/contextApp";
 import { CartItem } from "../(landing)/types/CartItemType";
 
 export const ButtonCart = () => {
@@ -27,7 +27,7 @@ export const ButtonCart = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline">
+        <Button variant="ghost">
           <ShoppingCartIcon />
         </Button>
       </SheetTrigger>
